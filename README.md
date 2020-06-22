@@ -11,4 +11,4 @@ Loads the Deepak Chopra random quote generator page.
 ### game-of-thrones-quotes
 Loads a page with a Game of Thrones quote.
 
-![Game of Thrones Quotes](https://j.gifs.com/vlymz8.gif)
+![Game of Thrones Quotes](https://j.gifs.com/ROm80E.gif)
