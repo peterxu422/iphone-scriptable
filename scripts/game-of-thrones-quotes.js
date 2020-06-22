@@ -2,7 +2,7 @@ const URL = 'https://game-of-thrones-quotes.herokuapp.com/v1/random';
 const QUOTE_CLASS = "quote";
 
 const req = new Request(URL);
-let resp = await req.loadString();
+let resp = await req.loadJSON();
 let html = parseQuote(resp);
 WebView.loadHTML(html);
 
