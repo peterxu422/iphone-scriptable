@@ -1,5 +1,6 @@
 const URL = 'https://game-of-thrones-quotes.herokuapp.com/v1/random';
 const QUOTE_CLASS = "quote";
+const CHARACTERS = initCharacters();
 
 const req = new Request(URL);
 let resp = await req.loadJSON();
@@ -51,69 +52,70 @@ function parseQuote(quotePayload) {
     return html;
 }
 
-// Data
-const CHARACTERS = {
-    "Jon Snow": {
-        image: "https://i.imgur.com/3k0gUjU.jpg"
-    },
-    "Sansa Stark": {
-        image: "https://i.imgur.com/wBif6v5.jpeg"
-    },
-    "Eddard \"Ned\" Stark": {
-        image: "https://i.imgur.com/gcBwQZV.jpeg"
-    },
-    "Jaime Lannister": {
-        image: "https://i.imgur.com/sO074Wy.png"
-    },
-    "Tyrion Lannister": {
-        image: "https://i.imgur.com/1QfCOmI.jpeg"
-    },
-    "Cersei Lannister": {
-        image: "https://i.imgur.com/2ZlebJ0.jpg"
-    },
-    "Joffrey Baratheon": {
-        image: "https://i.imgur.com/RqGeomt.jpeg"
-    },
-    "Aerys II Targaryen": {
-        image: "https://i.imgur.com/RKXGJBZ.png"
-    },
-    "Daenerys Targaryen": {
-        image: "https://i.imgur.com/4c8njSb.jpeg"
-    },
-    "Tywin Lannister": {
-        image: "https://i.imgur.com/YIMms65.jpeg"
-    },
-    "Ramsay Bolton": {
-        image: "https://i.imgur.com/eJiL74r.jpg"
-    },
-    "Arya Stark": {
-        image: "https://i.imgur.com/Kup8o73.jpeg"
-    },
-    "Robert Baratheon": {
-        image: "https://i.imgur.com/6rEDoVL.jpeg"
-    },
-    "Theon Greyjoy": {
-        image: "https://i.imgur.com/18v6ONj.jpeg"
-    },
-    "Samwell Tarly": {
-        image: "https://i.imgur.com/c7jNy4v.gif"
-    },
-    "Lord Varys": {
-        image: "https://i.imgur.com/A5SN6Wd.jpg"
-    },
-    "Bran Stark": {
-        image: "https://i.imgur.com/IOARmQb.png"
-    },
-    "Brienne of Tharth": {
-        image: "https://i.imgur.com/Jd5GS9Y.jpeg"
-    },
-    "Petyr Baelish": {
-        image: "https://i.imgur.com/1GhGwiB.jpg"
-    },
-    "Tormund": {
-        image: "https://i.imgur.com/zzh8iww.jpeg"
-    },
-    "Melisandre": {
-        image: "https://i.imgur.com/r3VsE5J.jpg"
-    }
-};
+function initCharacters() {
+    return {
+        "Jon Snow": {
+            image: "https://i.imgur.com/3k0gUjU.jpg"
+        },
+        "Sansa Stark": {
+            image: "https://i.imgur.com/wBif6v5.jpeg"
+        },
+        "Eddard \"Ned\" Stark": {
+            image: "https://i.imgur.com/gcBwQZV.jpeg"
+        },
+        "Jaime Lannister": {
+            image: "https://i.imgur.com/sO074Wy.png"
+        },
+        "Tyrion Lannister": {
+            image: "https://i.imgur.com/1QfCOmI.jpeg"
+        },
+        "Cersei Lannister": {
+            image: "https://i.imgur.com/2ZlebJ0.jpg"
+        },
+        "Joffrey Baratheon": {
+            image: "https://i.imgur.com/RqGeomt.jpeg"
+        },
+        "Aerys II Targaryen": {
+            image: "https://i.imgur.com/RKXGJBZ.png"
+        },
+        "Daenerys Targaryen": {
+            image: "https://i.imgur.com/4c8njSb.jpeg"
+        },
+        "Tywin Lannister": {
+            image: "https://i.imgur.com/YIMms65.jpeg"
+        },
+        "Ramsay Bolton": {
+            image: "https://i.imgur.com/eJiL74r.jpg"
+        },
+        "Arya Stark": {
+            image: "https://i.imgur.com/Kup8o73.jpeg"
+        },
+        "Robert Baratheon": {
+            image: "https://i.imgur.com/6rEDoVL.jpeg"
+        },
+        "Theon Greyjoy": {
+            image: "https://i.imgur.com/18v6ONj.jpeg"
+        },
+        "Samwell Tarly": {
+            image: "https://i.imgur.com/c7jNy4v.gif"
+        },
+        "Lord Varys": {
+            image: "https://i.imgur.com/A5SN6Wd.jpg"
+        },
+        "Bran Stark": {
+            image: "https://i.imgur.com/IOARmQb.png"
+        },
+        "Brienne of Tharth": {
+            image: "https://i.imgur.com/Jd5GS9Y.jpeg"
+        },
+        "Petyr Baelish": {
+            image: "https://i.imgur.com/1GhGwiB.jpg"
+        },
+        "Tormund": {
+            image: "https://i.imgur.com/zzh8iww.jpeg"
+        },
+        "Melisandre": {
+            image: "https://i.imgur.com/r3VsE5J.jpg"
+        }
+    };
+}
