@@ -36,7 +36,7 @@ function parseQuote(quotePayload) {
                 <figure class="${QUOTE_CLASS}">
                     <div class="quoteDisplayContainer">
                         <div class="imgContainer">
-                            <img src="${CHARACTERS[character].image}" width="100"/>
+                            <img src="${CHARACTERS[character].image}" width="500"/>
                         </div>
                     </div>
                     <div class="quoteContainer">
