@@ -42,7 +42,7 @@ function parseQuote(quotePayload) {
                     <div class="quoteContainer">
                         <blockquote>${quote}</blockquote>
                         <figcaption>
-                            &mdash; ${character}, <cite>${house}</cite>
+                            &mdash; ${character} ${character.house ? ", <cite>${house}</cite>" : ""}
                         </figcaption>
                     </div>
                 </figure>
