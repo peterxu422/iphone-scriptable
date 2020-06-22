@@ -32,6 +32,7 @@ const CHARACTERS = {
 const req = new Request(URL);
 let resp = await req.loadJSON();
 let html = parseQuote(resp);
+console.log(html);
 WebView.loadHTML(html);
 
 function parseQuote(quotePayload) {
@@ -56,18 +57,32 @@ function parseQuote(quotePayload) {
                     .quote blockquote {
                         margin: 1em;
                     }
+
+                    .imgContainer {
+                        flex: 1;
+                    }
+                    .quoteContainer {
+                        flex: 9;
+                    }
+                    .quoteDisplayContainer {
+                        display: flex;
+                    }
                 </style>
             </head>
             <body>
                 <figure class="${QUOTE_CLASS}">
-                    <blockquote>
-                        ${quote}
-                    </blockquote>
-                    <figcaption>
-                        &mdash; ${character}, <cite>${house}</cite>
-                    </figcaption>
+                    <div class="quoteDisplayContainer">
+                        <div class="imgContainer">
+                            <img src="${CHARACTERS[character].image}" width="100"/>
+                        </div>
+                    </div>
+                    <div class="quoteContainer">
+                        <blockquote>${quote}</blockquote>
+                        <figcaption>
+                            &mdash; ${character}, <cite>${house}</cite>
+                        </figcaption>
+                    </div>
                 </figure>
-                <img src="${CHARACTERS['Jon Snow'].image}" width = "128" height = "128">
             </body>
         </html>
     `
