@@ -6,7 +6,7 @@ My iPhone scripts made with [Scriptable](https://scriptable.app/).
 ### game-of-thrones-quotes
 Loads a page with a Game of Thrones quote.
 
-![Game of Thrones Quotes](https://j.gifs.com/ROm80E.gif)
+![Game of Thrones Quotes](https://j.gifs.com/q7qA9p.gif)
 
 ### deepak
 Loads the Deepak Chopra random quote generator page.
