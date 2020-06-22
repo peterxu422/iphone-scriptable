@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 const URL = 'https://game-of-thrones-quotes.herokuapp.com/v1/random';
 const QUOTE_CLASS = "quote";
 
